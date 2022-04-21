@@ -1,0 +1,224 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+:root {
+    --clr-txt-gray:#86868B;
+    --clr-primary-black:black;
+    --clr-primary-white:white;
+
+  
+    --ff-montserrat:'Montserrat', sans-serif;
+    --ff-sf:'Source Sans Pro', sans-serif;
+  
+    --br-btns:10px;
+    --br-primary:20px;
+
+    --width-max:600px;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:var(--ff-montserrat);
+  padding:.625rem 1.25rem;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size:1.125rem;
+}
+
+.header-clients {
+  color:gray;
+  font-weight: 250;
+  font-size:.35rem;
+}
+
+.menu {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-montserrat);
+  padding:.625rem 2.5rem;
+}
+
+.menu-item {
+  font-weight: 600;
+  font-size:.45rem;
+}
+
+.sec-world {
+  font-family:var(--ff-montserrat);
+  background-image:url('images/world.png');
+  background-repeat:no-repeat;
+  background-size:20%;
+  background-position-x: right;
+  background-position-y: bottom;
+  height:5rem;
+  margin:20px 20px;
+}
+
+.sec-world-title {
+  font-weight: 600;
+  font-size:.75rem;
+}
+
+.sec-waves {
+  position:relative;
+  background-image:url('images/wave.png');
+  background-size:cover;
+  background-attachment: fixed;
+  height:300px;
+}
+
+.align-bot {
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.sec-waves-box {
+  font-family:var(--ff-montserrat);
+  color:var(--clr-primary-white);
+  background-color:rgba(0, 0, 0, 0.6);
+  border-top:8px solid black;
+  border-bottom:8px solid black;
+  padding:20px 10px;
+
+}
+
+.box-title {
+  font-weight: 700;
+  font-size:.7rem;
+}
+
+.box-p {
+  font-weight: 500;
+  font-size:.4rem;
+}
+
+.box-white {
+  font-family:var(--ff-sf);
+  font-weight: 700;
+  margin:10px 30px;
+}
+
+.box-white-title {
+  font-size:.6rem;
+}
+
+.box-white-p {
+  color:var(--clr-txt-gray);
+  font-size:.8rem;
+}
+
+.btn-main {
+  background:linear-gradient(90deg, #00E1FF 7.22%, #34CEFF 48.21%, #4CE9FE 102.94%);
+  border-radius:10px;
+  font-family:var(--ff-montserrat);
+  font-weight: 700;
+  padding:10px 40px;
+  text-align:center;
+  color:var(--clr-primary-white);
+  width:max-content;
+  margin:0 auto;
+  box-shadow:10px 2px #CDF9FF,-10px 2px #CDF9FF,10px -2px #CDF9FF,-10px -2px #CDF9FF, 20px 2px #E5FAFD, -20px 2px #E5FAFD, 20px -2px #E5FAFD, -20px -2px #E5FAFD;
+}
+
+footer {
+  margin-top:30px;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.south {
+  font-family:var(--ff-montserrat);
+  font-weight: 250;
+  color:var(--clr-txt-gray);
+  text-align: center;
+  font-size:.4rem;
+  
+}
+
